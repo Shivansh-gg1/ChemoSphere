@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+
+  > .leftContainer {
+    /* border: 2px solid red; */
+    width: 45%;
+    > img {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  > .rightContainer {
+    /* border: 2px solid blue; */
+    width: 55%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    > .formContent {
+      /* border: 2px solid red; */
+      margin: 8rem 0px;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+
+      > .title {
+        /* border: 2px solid green; */
+        margin: 20px 0px;
+      }
+
+      > .inputs {
+        /* border: 2px solid black; */
+        margin: 20px 0px;
+
+        > .email {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          > span {
+            font-weight: 500;
+          }
+          > input {
+            margin: 5px 0px;
+            outline: none;
+            border: none;
+            background: rgba(158, 252, 252, 0.778);
+            padding: 5px;
+            margin: 5px 0;
+            font-size: 15px;
+          }
+        }
+        > .password {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          > span {
+            font-weight: 500;
+          }
+
+          > input {
+            margin: 5px 0px;
+            outline: none;
+            border: none;
+            background: rgba(158, 252, 252, 0.778);
+            padding: 5px;
+            margin: 5px 0;
+            font-size: 15px;
+          }
+          > div {
+            > span {
+              color: blue;
+              font-size: 13px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      > .btn {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+
+        > button {
+          width: 100%;
+          font-size: 16px;
+          padding: 5px 0px;
+          border-radius: 20px;
+          background: rgb(0, 70, 49);
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
